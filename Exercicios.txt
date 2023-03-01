@@ -2,3 +2,13 @@ BALEIRO GARROTE SERROTE GOLEIRO ROTEIRO
 Buscar apenas GARROTE, SERROTE e ROTEIRO
 Solução: [A-Z]*ROT[A-Z]+
 
+De Denise desde de 2019 aconteceu de tudo de
+Selecionar apenas "de" no casode denise, desde nao deve ser selecionado.
+Solução: \bde\b
+
+Validar email
+Solução: ^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$
+
+Pegar apenas tag p
+<a href="http://www.meuteste.net/"> Meu Teste </a><p> test </p>
+Solução: <p[^>]*>

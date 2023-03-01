@@ -15,4 +15,23 @@ Classes de char - []
 \s whitespace [ \t\r\n\f]
 \w wordchar  [A-Za-z0-9_]
 
+Ancora
+\b - tem de ser identico(\bde\b seleciona de mas nao desde)
+^  - Tem de comecar
+$  - tem de terminar  
+
+Grupos
+(\w+)   - grupo de palavras
+(\w+)?  - grupo de palavras opcional
+(?:\w+) - grupo de palavras negação
+
+BackReferences
+<([AZ][AZ0-9]*)\b[^>]*>.*?</\1>. 
+Este regex contém apenas um par de parênteses, que capturam a string correspondente por [A-Z][A-Z0-9]* 
+Esta é a tag HTML de abertura. (Como as tags HTML não diferenciam maiúsculas de minúsculas, 
+esse regex requer correspondência sem distinção entre maiúsculas e minúsculas.) 
+A referência invertida \1 (barra invertida um) faz referência ao primeiro grupo de captura. \1
+
+
+
 
